@@ -18,11 +18,54 @@ body {
     text-decoration: none;
 }
 
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* -----HEADER----- */
 
 .header {
     background-color: var(--background-color)
 }
+
+.header-container {}
 
 .header-logo {
     font-family: 'Raleway', sans-serif;
@@ -30,8 +73,6 @@ body {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
@@ -40,6 +81,12 @@ body {
 .header-logo-color {
     color: var(--title-color)
 }
+
+.header-nav {}
+
+.header-nav-list {}
+
+.header-nav-item {}
 
 .header-link {
     font-weight: 500;
@@ -57,6 +104,10 @@ body {
 .header-address {
     font-style: normal;
 }
+
+.header-address-list {}
+
+.header-address-item {}
 
 .header-address-link {
     font-family: 'Roboto', sans-serif;
@@ -80,12 +131,28 @@ body {
     background: #2E2F42;
 }
 
+.hero-main-container {}
+
 .hero-title {
     font-size: 56px;
     line-height: 1.07;
-    text-align: center;
     letter-spacing: 0.02em;
     color: var(--background-color)
+}
+
+.hero-list-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-color)
+}
+
+.text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color)
 }
 
 .hero-btn {
@@ -94,14 +161,17 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.04em;
     background: #F4F4FD;
     color: #4D5AE5;
     cursor: pointer;
 }
+
+.hero-btn-container {}
+
+.hero-btn-list {}
+
+.hero-btn-item {}
 
 .hero-btn:hover,
 .hero-btn:focus {
@@ -109,14 +179,18 @@ body {
     color: #FFFFFF;
 }
 
+.portfolio-list {}
+
+.portfolio-item {}
+
+.portfolio-text {}
+
 .hero-button {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.04em;
     background: #4D5AE5;
     color: var(--background-color);
@@ -134,6 +208,14 @@ body {
     background-color: var(--background-color)
 }
 
+.values-container {}
+
+.values-list {}
+
+.values-item {}
+
+.values-text {}
+
 .values-title {
     font-weight: 500;
     font-size: 20px;
@@ -148,10 +230,15 @@ body {
     background-color: var(--background-color)
 }
 
+.work-container {}
+
+.work-list {}
+
+.work-item {}
+
 .work-title {
     font-size: 36px;
     line-height: 1.11;
-    text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--title-color)
@@ -163,10 +250,13 @@ body {
     background-color: #F4F4FD;
 }
 
+.team-container {}
+
+.team-list {}
+
 .team-title {
     font-size: 36px;
     line-height: 1.11;
-    text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--title-color)
@@ -180,30 +270,11 @@ body {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    text-align: center;
     letter-spacing: 0.02em;
     color: var(--title-color)
 }
 
 .team-text {
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: var(--text-color)
-}
-
-/* -----MAIN PORTFOLIO----- */
-
-.hero-list-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--title-color)
-}
-
-.text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -216,14 +287,14 @@ body {
     background-color: var(--title-color);
 }
 
+.footer-container {}
+
 .footer-logo {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
