@@ -22,7 +22,7 @@ body {
     width: 1158px;
     margin: 0 auto;
     outline: 2px solid red;
-    padding: 0 15px 0 15px;
+    padding: 0 15px;
 }
 
 p,
@@ -66,8 +66,6 @@ img {
 }
 
 .header-container {
-    padding-top: 24px;
-    padding-bottom: 24px;
     display: flex;
 }
 
@@ -90,13 +88,13 @@ img {
 .header-nav {
     display: flex;
     align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-nav-list {
     display: flex;
     gap: 40px;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .header-nav-item {}
@@ -107,6 +105,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--title-color);
+    padding: 24px 0
 }
 
 .header-link:hover,
@@ -227,6 +226,7 @@ img {
     border: 1px solid #E7E9FC;
     border-radius: 4px;
     padding: 12px 24px;
+    border-radius: 4px;
 }
 
 .hero-btn-container {}
@@ -235,6 +235,7 @@ img {
     display: flex;
     justify-content: center;
     gap: 24px;
+    margin-bottom: 72px;
 }
 
 .hero-btn-item {
@@ -254,15 +255,24 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .portfolio-item {
-    border: 1px solid #E7E9FC;
+    width: calc((100% - 48px) / 3);
 }
 
 .portfolio-text {
     padding-bottom: 32px;
+}
+
+.app-container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
+
 }
 
 /* -----Section VALUES----- */
@@ -347,9 +357,8 @@ img {
     text-transform: capitalize;
     color: var(--title-color);
     padding-top: 120px;
-    padding-bottom: 72px;
     text-align: center;
-    margin-bottom: 8px
+    margin-bottom: 72px;
 }
 
 .team-item {
