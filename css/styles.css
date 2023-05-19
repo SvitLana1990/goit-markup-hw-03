@@ -22,6 +22,7 @@ body {
     width: 1158px;
     margin: 0 auto;
     outline: 2px solid red;
+    padding: 0 15px 0 15px;
 }
 
 p,
@@ -88,11 +89,14 @@ img {
 
 .header-nav {
     display: flex;
+    align-items: center;
 }
 
 .header-nav-list {
     display: flex;
     gap: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-nav-item {}
@@ -118,6 +122,8 @@ img {
 .header-address-list {
     display: flex;
     gap: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-address-item {}
@@ -147,8 +153,13 @@ img {
     color: var(--text-color);
 }
 
+.hero {
+    padding: 96px 0 120px
+}
+
 .hero-main-page {
     background: #2E2F42;
+    padding: 188px 0;
 }
 
 .hero-main-container {
@@ -193,6 +204,8 @@ img {
     min-width: 169px;
     height: 56px;
     margin-top: 48px;
+    border: none;
+    border-radius: 4px
 }
 
 .hero-button:hover,
@@ -232,6 +245,7 @@ img {
 .hero-btn:focus {
     background: #404BBF;
     color: #FFFFFF;
+    border: 1px solid transparent
 }
 
 /* -----PORTFOLIO----- */
@@ -255,6 +269,7 @@ img {
 
 .values {
     background-color: var(--background-color);
+    padding: 120px 0;
 }
 
 .values-container {}
@@ -264,7 +279,9 @@ img {
     gap: 24px;
 }
 
-.values-item {}
+.values-item {
+    width: calc((100% - 72px) / 4);
+}
 
 .values-text {}
 
@@ -274,12 +291,14 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--title-color);
+    margin-bottom: 8px;
 }
 
 /* -----Section WORK----- */
 
 .work {
     background-color: var(--background-color);
+    padding-bottom: 120px;
 }
 
 .work-container {}
@@ -290,7 +309,9 @@ img {
     justify-content: center;
 }
 
-.work-item {}
+.work-item {
+    width: calc((100% - 48px) / 3)
+}
 
 .work-title {
     font-size: 36px;
@@ -298,14 +319,15 @@ img {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--title-color);
-    padding-bottom: 72px;
     text-align: center;
+    margin-bottom: 72px;
 }
 
 /* -----Section TEAM----- */
 
 .team {
     background-color: #F4F4FD;
+    padding: 120px 0
 }
 
 .team-container {
@@ -327,10 +349,18 @@ img {
     padding-top: 120px;
     padding-bottom: 72px;
     text-align: center;
+    margin-bottom: 8px
 }
 
 .team-item {
     background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-name-container {
+    padding: 32px 16px;
+
 }
 
 .worker-name {
@@ -356,6 +386,7 @@ img {
 
 .footer {
     background-color: var(--title-color);
+    padding: 100px 0
 }
 
 .footer-container {
@@ -371,6 +402,8 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4D5AE5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-logo-color {
